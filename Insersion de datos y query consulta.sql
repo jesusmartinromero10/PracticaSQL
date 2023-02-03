@@ -101,238 +101,274 @@ insert into practica_sql.Aseguradoras (idAseguradora, Nombre)
 
 insert into practica_sql.Polizas (idPoliza, Numero, idaseguradora, F_Inicio)
 		
-	values ('001', '001234', '001', '01/12/2002');
-
-
-insert into practica_sql.Polizas (idPoliza, Numero, idaseguradora, F_Inicio, F_Fin)
-		
-	values ('002', '001235', '001', '01/12/2000', '01/12/2002');
+	values ('001', '001234', '001', '01-12-2002');
 
 
 insert into practica_sql.Polizas (idPoliza, Numero, idaseguradora, F_Inicio)
 		
-	values ('003', '001236', '002', '01/12/2002');
+	values ('002', '001235', '001', '01-12-2000');
+
+
+update practica_sql.polizas
+set F_Fin = '01-12-2002'
+where idPoliza = '002'
+;
+
+insert into practica_sql.Polizas (idPoliza, Numero, idaseguradora, F_Inicio)
+		
+	values ('003', '001236', '002', '01-12-2002');
+
+update practica_sql.polizas
+set F_Fin = '02-02-2023'
+where idPoliza = '001'
+;
 
 
 insert into practica_sql.Polizas (idPoliza, Numero, idaseguradora, F_Inicio)
 		
-	values ('004', '001237', '002', '01/12/2002');
+	values ('004', '001237', '002', '01-12-2002');
 
 insert into practica_sql.Polizas (idPoliza, Numero, idaseguradora, F_Inicio)
 		
-	values ('005', '001238', '002', '01/12/2002');
+	values ('005', '001238', '002', '01-12-2002');
 
 insert into practica_sql.Polizas (idPoliza, Numero, idaseguradora, F_Inicio)
 		
-	values ('006', '001239', '003', '01/12/2002');
+	values ('006', '001239', '003', '01-12-2002');
 
 insert into practica_sql.Polizas (idPoliza, Numero, idaseguradora, F_Inicio)
 		
-	values ('007', '001240', '003', '01/12/2002');
+	values ('007', '001240', '003', '01-12-2002');
 
 insert into practica_sql.Polizas (idPoliza, Numero, idaseguradora, F_Inicio)
 		
-	values ('008', '001241', '003', '01/12/2002');
+	values ('008', '001241', '003', '01-12-2002');
 
 insert into practica_sql.Polizas (idPoliza, Numero, idaseguradora, F_Inicio)
 		
-	values ('009', '001242', '001', '01/12/2002');
+	values ('009', '001242', '001', '01-12-2002');
 
 insert into practica_sql.Polizas (idPoliza, Numero, idaseguradora, F_Inicio)
 		
-	values ('010', '001243', '001', '01/12/2002');
+	values ('010', '001243', '001', '01-12-2002');
 
 insert into practica_sql.Polizas (idPoliza, Numero, idaseguradora, F_Inicio)
 		
-	values ('011', '001244', '001', '01/12/2002');
+	values ('011', '001244', '001', '01-12-2002');
 
 
 insert into practica_sql.Coches (IdCoche, idmodelo, idcolor, matricula, kilometro, idpoliza, fecha_compra)
 		
-	values ('001', '001', '001', '1111MNS', 23000,'001', '01/12/2002');
+	values ('001', '001', '001', '1111MNS', 23000,'001', '01-12-2002');
 
 insert into practica_sql.Coches (IdCoche, idmodelo, idcolor, matricula, kilometro, idpoliza, fecha_compra)
 		
-	values ('002', '002', '002', '2222MNS', 22000,'011', '01/12/2002');
+	values ('002', '002', '002', '2222MNS', 22000,'011', '01-12-2002');
 
 insert into practica_sql.Coches (IdCoche, idmodelo, idcolor, matricula, kilometro, idpoliza, fecha_compra)
 		
-	values ('003', '003', '003', '3333MNS', 33000,'003', '01/12/2002');
+	values ('003', '003', '003', '3333MNS', 33000,'003', '01-12-2002');
 
 insert into practica_sql.Coches (IdCoche, idmodelo, idcolor, matricula, kilometro, idpoliza, fecha_compra)
 		
-	values ('004', '004', '004', '4444MNS', 44000,'004', '01/12/2002');
+	values ('004', '004', '004', '4444MNS', 44000,'004', '01-12-2002');
 
 insert into practica_sql.Coches (IdCoche, idmodelo, idcolor, matricula, kilometro, idpoliza, fecha_compra)
 		
-	values ('005', '005', '001', '5555MNS', 55000,'005', '01/12/2002');
+	values ('005', '005', '001', '5555MNS', 55000,'005', '01-12-2002');
 
 insert into practica_sql.Coches (IdCoche, idmodelo, idcolor, matricula, kilometro, idpoliza, fecha_compra)
 		
-	values ('006', '006', '002', '6666MNS', 66000,'006', '01/12/2002');
+	values ('006', '006', '002', '6666MNS', 66000,'006', '01-12-2002');
 
 insert into practica_sql.Coches (IdCoche, idmodelo, idcolor, matricula, kilometro, idpoliza, fecha_compra)
 		
-	values ('007', '007', '003', '7777MNS', 77000,'007', '01/12/2002');
+	values ('007', '007', '003', '7777MNS', 77000,'007', '01-12-2002');
 
 insert into practica_sql.Coches (IdCoche, idmodelo, idcolor, matricula, kilometro, idpoliza, fecha_compra)
 		
-	values ('008', '008', '004', '8888MNS', 88000,'008', '01/12/2002');
+	values ('008', '008', '004', '8888MNS', 88000,'008', '01-12-2002');
 
 insert into practica_sql.Coches (IdCoche, idmodelo, idcolor, matricula, kilometro, idpoliza, fecha_compra)
 		
-	values ('009', '009', '001', '9999MNS', 99000,'009', '01/12/2002');
+	values ('009', '009', '001', '9999MNS', 99000,'009', '01-12-2002');
 
 insert into practica_sql.Coches (IdCoche, idmodelo, idcolor, matricula, kilometro, idpoliza, fecha_compra)
 		
-	values ('010', '009', '003', '1000MNZ', 2000,'010', '01/12/2002');
+	values ('010', '009', '003', '1000MNZ', 2000,'010', '01-12-2002');
 
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('001', '001', 3000,'01/12/2005', 500, '001');
+	values ('001', '001', 3000,'01-12-2005', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('002', '001', 20000,'01/12/2022', 1000, '001');
+	values ('002', '001', 20000,'01-12-2022', 1000, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('003', '002', 3000,'01/12/2005', 500, '001');
+	values ('003', '002', 3000,'01-12-2005', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('004', '002', 20000,'01/12/2022', 1500, '001');
+	values ('004', '002', 20000,'01-12-2022', 1500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('005', '003', 3000,'01/12/2005', 500, '001');
+	values ('005', '003', 3000,'01-12-2005', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('006', '003', 30000,'01/12/2022', 1200, '001');
+	values ('006', '003', 30000,'01-12-2022', 1200, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('007', '004', 3000,'01/12/2005', 500, '001');
+	values ('007', '004', 3000,'01-12-2005', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('008', '004', 34000,'01/12/2022', 4500, '001');
+	values ('008', '004', 34000,'01-12-2022', 4500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('009', '005', 3000,'01/12/2005', 500, '001');
+	values ('009', '005', 3000,'01-12-2005', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('010', '005', 39000,'01/12/2022', 2500, '001');
+	values ('010', '005', 39000,'01-12-2022', 2500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('011', '006', 3000,'01/12/2005', 500, '001');
+	values ('011', '006', 3000,'01-12-2005', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('012', '006', 53000,'01/12/2022', 800, '001');
+	values ('012', '006', 53000,'01-12-2022', 800, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('013', '007', 3000,'01/12/2005', 500, '001');
+	values ('013', '007', 3000,'01-12-2005', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('014', '007', 70000,'01/12/2022', 7500, '001');
+	values ('014', '007', 70000,'01-12-2022', 7500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('015', '008', 3000,'01/12/2005', 500, '001');
+	values ('015', '008', 3000,'01-12-2005', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('016', '008', 83000,'01/12/2022', 2500, '001');
+	values ('016', '008', 83000,'01-12-2022', 2500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('017', '009', 3000,'01/12/2005', 500, '001');
+	values ('017', '009', 3000,'01-12-2005', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('018', '009', 33000,'01/12/2022', 500, '001');
+	values ('018', '009', 33000,'01-12-2022', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('019', '010', 1000,'01/12/2005', 500, '001');
+	values ('019', '010', 1000,'01-12-2005', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('020', '010', 2000,'01/12/2022', 1500, '001');
+	values ('020', '010', 2000,'01-12-2022', 1500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('021', '001', 23000,'01/02/2023', 500, '001');
+	values ('021', '001', 23000,'01-02-2023', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('022', '002', 22000,'01/02/2023', 500, '001');
+	values ('022', '002', 22000,'01-02-2023', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('023', '003', 33000,'01/02/2023', 500, '001');
+	values ('023', '003', 33000,'01-02-2023', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('024', '004', 44000,'01/02/2023', 500, '001');
+	values ('024', '004', 44000,'01-02-2023', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('025', '005', 55000,'01/02/2023', 500, '001');
+	values ('025', '005', 55000,'01-02-2023', 500, '001');
 
 insert into practica_sql.Revisiones (IdRevision, IdCoche, Kilometros, Fecha_revision, Importe, idmoneda)
 		
-	values ('026', '006', 66000,'01/02/2023', 500, '001');
+	values ('026', '006', 66000,'01-02-2023', 500, '001');
 
-
-insert into practica_sql.altabaja  (IdCoche, fecha_alta , fecha_baja, concepto)
-		
-	values ('001', '01/12/2002', '02/02/2023', 'Se le ha roto el motor');
 
 insert into practica_sql.altabaja  (IdCoche, fecha_alta , concepto)
 		
-	values ('002', '01/12/2002', 'Todo esta correcto');
+	values ('001', '01-12-2002', 'Todo esta correcto');
+
+insert into practica_sql.altabaja  (IdCoche, fecha_alta , concepto)
+		
+	values ('002', '01-12-2000', 'Todo esta correcto');
 	
 
 insert into practica_sql.altabaja  (IdCoche, fecha_alta, concepto)
 		
-	values ('003', '01/12/2002', 'Todo esta correcto');
+	values ('003', '01-12-2002', 'Todo esta correcto');
+
+update practica_sql.altabaja
+set fecha_baja = '02-02-2023', 
+	concepto = 'Se gripo el motor'
+where idcoche = '001';
+
 
 insert into practica_sql.altabaja  (IdCoche, fecha_alta, concepto)
 		
-	values ('004', '01/12/2002', 'Todo esta correcto');
+	values ('004', '01-12-2002', 'Todo esta correcto');
 
 insert into practica_sql.altabaja  (IdCoche, fecha_alta, concepto)
 		
-	values ('005', '01/12/2002', 'Todo esta correcto');
+	values ('005', '01-12-2002', 'Todo esta correcto');
 
 insert into practica_sql.altabaja  (IdCoche, fecha_alta, concepto)
 		
-	values ('006', '01/12/2002', 'Todo esta correcto');
+	values ('006', '01-12-2002', 'Todo esta correcto');
 
 insert into practica_sql.altabaja  (IdCoche, fecha_alta, concepto)
 		
-	values ('007', '01/12/2002', 'Todo esta correcto');
+	values ('007', '01-12-2002', 'Todo esta correcto');
 
 insert into practica_sql.altabaja  (IdCoche, fecha_alta, concepto)
 		
-	values ('008', '01/12/2002', 'Todo esta correcto');
+	values ('008', '01-12-2002', 'Todo esta correcto');
 
 insert into practica_sql.altabaja  (IdCoche, fecha_alta, concepto)
 		
-	values ('009', '01/12/2002', 'Todo esta correcto');
+	values ('009', '01-12-2002', 'Todo esta correcto');
 
 insert into practica_sql.altabaja  (IdCoche, fecha_alta, concepto)
 		
-	values ('010', '01/12/2002', 'Todo esta correcto');
+	values ('010', '01-12-2002', 'Todo esta correcto');
+
+
+
+select m2.nombre as marca,
+	   m.nombre as modelo, 
+	   ge.nombre as grupo, 
+	   c2.nombre as color, 
+	   c.fecha_compra, 
+	   c.matricula, 
+	   a.nombre as aseguradora, 
+	   p.numero as numero_poliza  
+from practica_sql.coches c
+left join practica_sql.modelos m on c.idmodelo = m.idmodelo 
+left join practica_sql.marcas m2 on m2.idmarca = m.idmarca 
+left join practica_sql.grupos_empresariales ge on m2.idgrupo_empresarial = ge.idgrupo_empresarial 
+left join practica_sql.colores c2 on c.idcolor = c2.idcolor 
+left join practica_sql.polizas p on c.idpoliza = p.idpoliza 
+left join practica_sql.aseguradoras a on p.idaseguradora = a.idaseguradora
+left join practica_sql.altabaja a2 on c.idcoche = a2.idcoche 
+where a2.fecha_baja > now() ;
 
 
 
